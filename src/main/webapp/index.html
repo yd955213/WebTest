@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+	<head>
+		<title>007的第一个网页</title>
+		<meta charset="utf-8">
+		<link href="./public/photo/test6933-8006933.jpg" rel="shortcut icon" type="image/vnd.microsoft.icon">
+		<style>span,p{font-size:large;color:blue}</style>
+		<script> function typeWord(){console.log("正在输入")} </script>
+		<script src="vip07js.js"></script>
+		<link href="vip07css.css" type="text/css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div style="font-size: xxx-large; font-style: oblique; color: #6da139; background-color: deeppink;position: relative; left: 500px;">这是第一个网页</div>
+		<!-- alert用于在界面上产生一个alert弹窗。-->
+		<div onclick="alert('元素被点击了，弹个窗')" >roy脑壳有点痛</div>
+		
+		<p>雨一直下</p>
+		<p>气氛不够融洽</p>
+		
+		<span>红烧肉</span>
+		<span>东坡肘子</span>
+		
+		<h1 onmouseover="mvon()" onmouseout="mvout()">静夜思</h1>
+		<hr />
+		<span id="lineFirst">床前明月光</span>
+		<br />
+		<span>疑是地上霜</span>
+		<br />
+		<span>举头望明月</span>
+		<br />
+		<span>低头思故乡</span>
+		
+		
+		<div>
+			<a href="https://www.baidu.com" target="_blank" >遇到问题肿么办
+				<img src="https://gitee.com/static/images/logo-black.svg?t=158106664" title="遇到问题百度一下"/>
+			</a>
+		</div>
+		
+		
+			<!-- 表单元素用于提交内容 -->
+			<form action="./ServletLogin" method="get">
+				<div class="bigfont deathColor"><label>用户名输入框<input type="text" placeholder="输入用户名" name="userName"  oninput="typeWord()" ></label></div>
+				<div><label>密码输入框<input type="password" placeholder="输入密码" oninput="typePassword(this.value)" name ="passWord" ></label></div>
+				<div><input type="file" name="file" > 请上传文件</div>
+				
+				<div class="deathColor">
+					<label><input type="radio" name="喜欢的菜" value="红烧肉">红烧肉</label>
+					<label><input type="radio" name="喜欢的菜" value="酸菜鱼">酸菜鱼</label>
+					<label><input type="radio" name="不喜欢的菜" value="狮子头">狮子头</label>
+					
+				</div >
+				
+				<div class="deathColor">
+					<label><input type="checkbox" name="喜欢的玩具" value="皮卡丘" />皮卡丘</label> <br>
+					<label><input type="checkbox" name="喜欢的玩具" value="篮球" />篮球</label> <br>
+					<label><input type="checkbox" name="喜欢的玩具" value="足球" />足球</label><br>
+				</div>
+				
+				<div><input type="submit"></div>
+				<div>
+				<span>请选择软件测试类别：</span>
+				<select name="软件测试类目">
+					<option value="基础">基础</option>
+					<option value="java" selected=true>java</option>
+					<option value="python">python</option>
+					<option value="性能">性能</option>
+				</select>
+				</div>
+			
+			
+			</form>
+		
+		
+			<table border="3" width="150px">
+				<thead>
+					<th>姓名</th> 
+					<th>年龄</th> 
+					<th>性别</th> 
+				</thead>
+				<tbody>
+					<tr><td>Roy</td><td>30</td><td>男</td> </tr>
+					<tr><td>卡卡</td><td>30</td><td>男</td> </tr>
+					<tr><td>鱼鱼</td><td>18</td><td>女</td> </tr>
+					<tr><td>Will</td><td>30</td><td>男</td> </tr>
+				</tbody>		
+			</table>			
+			
+			<iframe src="index.html" frameborder="0" width="600px" height="1500px"></iframe>
+			
+		
+	
+	</body>
+</html>
