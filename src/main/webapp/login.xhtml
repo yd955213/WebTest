@@ -3,26 +3,33 @@
         PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <title>注册界面</title>
-    <script type="text/javascript" src="https://dss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/
-    https/jquery/jquery-1.10.2.min_65682a2.js"></script>
-    <script type="text/javascript" src="LoginJava.js"></script>
-    <script type="text/javascript" src="jquery.min.js"></script>
-</head>
-<body>
-    <a href="login.xhtml">测试myServlet</a>
-    <!--
-        action:提交到服务器的路径
-        method：提交方法
-    -->
-    <form action="./ServletLogin"  method="post">
-        <!-- servlet通过name属性获取用户输入的数据 -->
-        <div><label>用户名：<input type="text" name="userName"/></label></div>
-        <div><label>密&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="text" name="passWord"/></label></div>
-        <input type="submit" value="注册"/>
-    </form>
+    <head>
+        <title>注册界面</title>
+<!--        <script type="text/javascript" src="https://dss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/-->
+<!--        https/jquery/jquery-1.10.2.min_65682a2.js"></script>-->
+        <script type="text/javascript" src="LoginJava.js"></script>
+        <script type="text/javascript" src="jquery.min.js"></script>
+    </head>
+    <body>
+        <a href="login.xhtml">测试myServlet</a>
+        <!--
+            action:提交到服务器的路径
+            method：提交方法
+        -->
+        <form action="./ServletLogin"  method="post">
+            <!-- servlet通过name属性获取用户输入的数据 -->
+            <div><label>用户名：<input type="text" name="userName"/></label></div>
+            <div><label>密&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="text" name="passWord"/></label></div>
+            <input type="submit" value="注册"/>
 
-    <div><button onclick="loginAjaxTest()">Ajax测试提交</button></div>
-</body>
+        </form>
+
+        <!--            不要去使用 form表单中的input type='submit'，因为它会调用同步请求直接将form表单数据提交-->
+        <div><button name="text" onclick="loginAjaxTest()">Ajax测试提交</button></div>
+        <div>
+            <button name="json"  onclick="loginAjaxJson()">AjaxJSon提交</button>
+            <label style="font-size: 50px;" id="loginJson"></label>
+        </div>
+        <div>返回信息</div>
+    </body>
 </html>
