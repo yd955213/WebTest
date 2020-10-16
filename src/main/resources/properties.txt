@@ -1,0 +1,4 @@
+driverClass=com.mysql.jdbc.Driver
+jdbcUrl=jdbc:mysql://192.168.95.134:3306/test_project?useSSL=false&useUnicode=true&characterEncoding=utf-8
+mysqlUser=root
+mysqlPassWord=123

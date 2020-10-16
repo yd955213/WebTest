@@ -22,6 +22,7 @@ function loginAjaxJson(){
         dataType:"json",
         success:function (res) {
             $("#loginJson")[0].innerText=res["msg"];
+            //缓存原因可能导致颜色未改变，重启浏览器
             if(res["code"] == 0) {
                 $("#loginJson")[0].style.color="green";
             }else {
